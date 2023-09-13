@@ -1,0 +1,30 @@
+ApplicationConfiguration: |
+  Specify job configurations to override the default configurations for your applications.
+   1. **Spark:** 
+  ```js
+  [{
+                "Classification": "spark-defaults",
+                "Configurations": [],
+                "Properties": {
+                    "spark.driver.cores": "2",
+                    "spark.driver.memory": "4g",
+  			        "spark.dynamicAllocation.minExecutors":"1"
+                }
+            }]
+  ```
+  2. **Hive:** 
+  ```js
+  [
+            {
+                "Classification": "hive-site",
+                "Configurations": [],
+                "Properties": {
+                    "hive.driver.cores": "2",
+                    "hive.driver.memory": "4g",
+                    "hive.tez.container.size": "8192",
+                    "hive.tez.cpu.vcores": "4"
+                }
+            }
+        ]
+  ```
+ 
