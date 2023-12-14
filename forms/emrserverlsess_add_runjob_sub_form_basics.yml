@@ -1,0 +1,5 @@
+ApplicationName: EMR Serverless Application Name.
+Type: EMR Serverless Application Architecture type.
+Name: Enter Application Run Job Name.
+ApplicationId: Application Id
+ExecutionTimeoutMinutes: Specify execution time in minutes.
